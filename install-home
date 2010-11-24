@@ -1,0 +1,5 @@
+#!/bin/bash
+
+cp -r -v -u --preserve=mode,timestamp home/* home/.??* ~
+
+
