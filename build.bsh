@@ -2,6 +2,9 @@
 
 rm -rf build
 mkdir build
+
+chmod a+x home/bin/*
+
 tar --exclude-vcs -cjf build/linux-config.tar.bz2 . || exit 1
 
 cp -v build/linux-config.tar.bz2 /var/www/servisto.de/linux-config.tar.bz2 || exit 2
