@@ -1,0 +1,17 @@
+#!/bin/bash
+
+WORKDIR=~/tmp/linux-config
+
+mkdir -p $WORKDIR
+cd $WORKDIR
+
+wget https://servisto.de/linux-config.tar.bz2 || exit 1
+tar -xjf linux-config.tar.bz2 || exit 2
+
+./install-home.bsh
+
+cd
+rm -rf $WORKDIR
+rmdir ~/tmp || exit 0
+
+

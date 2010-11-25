@@ -1,0 +1,9 @@
+#!/bin/bash
+
+rm -rf build
+mkdir build
+tar --exclude-vcs -cjf build/linux-config.tar.bz2 . || exit 1
+
+cp -v build/linux-config.tar.bz2 /var/www/servisto.de/linux-config.tar.bz2 || exit 2
+cp home/bin/update-linux-config /var/www/servisto.de/update-linux-config || exit 3
+
