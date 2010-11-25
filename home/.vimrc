@@ -1,7 +1,7 @@
 ﻿set nocompatible         " prevents vim from emulating the original vi's bugs and limitations
 syntax on                " enable syntax hightlighting
 set background=dark      " syntax hightlighting colors for dark background
-colorscheme blackbeauty  " color scheme
+colorscheme desert       " color scheme
 set autoindent           " use the current line's indent level to set the indent level of new lines
 set smartindent          " intelligently guess the indent level of any new line based on the previous line
 set tabstop=4            " 4-space tabs
